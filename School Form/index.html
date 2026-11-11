@@ -1,0 +1,125 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>School Admission Form</h1>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="guardian">Parent/Guardian Name:</label>
+                <input type="text" id="guardian" name="guardian" required>
+            </div>
+
+            <div>
+                <label for="relationship">Parent/Guardian Relationship:</label>
+                <input type="text" id="relationship" name="relationship" required>
+            </div>
+
+            <div>
+                <label for="guardian-phone">Parent/Guardian Phone:</label>
+                <input type="tel" id="guardian-phone" name="guardian-phone" required>
+            </div>
+
+            <div>
+                <label for="grade">Grade applying for:</label>
+                <select id="grade" name="grade" required>
+                    <option value="">Select Grade</option>
+                    <option value="1">1st Grade</option>
+                    <option value="2">2nd Grade</option>
+                    <option value="3">3rd Grade</option>
+                    <option value="4">4th Grade</option>
+                    <option value="5">5th Grade</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        
+        <table>
+            <h1>School Timetable</h1>
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+    <tr>
+        <td>9:00 - 10:00</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Math</td>
+        <td>Art</td>
+    </tr>
+    <tr>
+        <td>10:00 - 11:00</td>
+        <td>History</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Science</td>
+        <td>Physical Education</td>
+    </tr>
+    <tr>
+        <td>11:00 - 12:00</td>
+        <td>Science</td>
+        <td>History</td>
+        <td>Math</td>
+        <td>English</td>
+        <td>Music</td>
+    </tr>
+    <tr>
+        <td>12:00 - 1:00</td>
+        <td colspan="5">Lunch Break</td>    
+    </tr>
+    <tr>
+        <td>1:00 - 2:00</td>
+        <td>Art</td>
+        <td>Physical Education</td>
+        <td>History</td>
+        <td>Math</td>
+        <td>Science</td>
+    </tr>
+</table>
+    </body>
+</html>     

@@ -1,115 +1,472 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <title>Wildflower Bakery</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="hero">
-            <h1>Welcome to Wildflower Bakery</h1>
-            <p>Delicious baked goods made with love</p>
-            <a href="#contact" class="btn">Order Now</a>
-        </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wildflower Bakery — slow mornings, good butter, and small-batch bakes made with care.">
+  <meta name="theme-color" content="#f7f1e7">
+  <title>Wildflower Bakery — A little more lovely, every day</title>
 
-        <section class="about">
-            <h2>Our Story</h2>
-            <p>Wildflower Bakery started in a tiny kitchen with one oven and a lot of stubborn optimism. What began as weekend baking for friends turned into something bigger — a little corner where the smell of fresh bread pulls people in off the street.
-We still do things the slow way. Dough that rests overnight. Butter that's never in a hurry. Nothing rushed, nothing shipped in from somewhere else.
-Every loaf, pastry, and cake that leaves our kitchen is made by hand, in small batches, by people who genuinely love doing this. That's the whole secret, really — no trick to it, just care.</p>
-        </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 
-        <section class="products">
-    <h2>Pastries & Desserts</h2>
-    <div class="card-grid">
-        <div class="card">
-            <h3>Breads & Baguettes</h3>
-            <p>Fresh baked daily, crusty outside, soft inside.</p>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="announcement">
+    <span>GOOD THINGS ARE RISING</span>
+    <span class="announcement-star">✳</span>
+    <span>Fresh from our oven, every morning</span>
+  </div>
+
+  <header class="site-header">
+
+    <a class="brand" href="#home">
+      <span class="brand-mark">✿</span>
+      <span class="brand-name">wildflower<span>bakery</span></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav">
+      <a href="#story">Our story</a>
+      <a href="#menu">The good stuff</a>
+      <a href="#kind-words">Kind words</a>
+      <a href="#visit">Find us</a>
+    </nav>
+
+    <a class="header-order" href="#menu">
+      Order a treat <span>↗</span>
+    </a>
+
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero section-wrap" id="home">
+
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          YOUR NEIGHBOURHOOD BAKERY
+        </p>
+
+        <h1>A little more<br><em>lovely,</em> every day.</h1>
+
+        <p class="hero-description">
+          Slow mornings, good butter, and something warm waiting for you.
+          Come on in — we've saved you the good seat.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu">
+            Explore the menu <span>↗</span>
+          </a>
+
+          <a class="text-link" href="#story">
+            A little about us <span>→</span>
+          </a>
         </div>
-        <div class="card">
-            <h3>Croissants & Danishes</h3>
-            <p>Buttery, flaky, and impossible to resist.</p>
+
+        <div class="hero-note">
+          <span class="note-flower">✳</span>
+          <span>Made by hand.<br>Never in a hurry.</span>
         </div>
-        <div class="card">
-            <h3>Muffins & Scones</h3>
-            <p>Perfect with your morning coffee.</p>
+      </div>
+
+      <div class="hero-art">
+
+        <div class="hero-photo-frame">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+               alt="Freshly baked artisan bread">
         </div>
-        <div class="card">
-            <h3>Cakes & Cupcakes</h3>
-            <p>Made to order for any occasion.</p>
+
+        <div class="photo-stamp">
+          <span>BAKED WITH</span>
+          <strong>♥</strong>
+          <span>A LITTLE MAGIC</span>
         </div>
-        <div class="card">
-            <h3>Rolls</h3>
-            <p>Soft, warm, straight from the oven.</p>
+
+        <div class="hero-caption">
+          THE DAILY<br>GOODNESS
+          <span>№ 01</span>
         </div>
-        <div class="card">
-            <h3>Tarts</h3>
-            <p>Sweet or savory, always flaky.</p>
+
+        <span class="hero-spark spark-one">✳</span>
+        <span class="hero-spark spark-two">✴</span>
+
+      </div>
+
+      <div class="hero-bottomline">
+        <span>SMALL BATCHES · BIG HEARTS</span>
+        <span>SCROLL A LITTLE ↓</span>
+      </div>
+
+    </section>
+
+    <!-- MOVING TEXT STRIP -->
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>REAL BUTTER</span><b>✳</b>
+        <span>HAPPY LITTLE ACCIDENTS</span><b>✳</b>
+        <span>BAKED FRESH DAILY</span><b>✳</b>
+        <span>MADE WITH CARE</span><b>✳</b>
+
+        <span>REAL BUTTER</span><b>✳</b>
+        <span>HAPPY LITTLE ACCIDENTS</span><b>✳</b>
+        <span>BAKED FRESH DAILY</span><b>✳</b>
+        <span>MADE WITH CARE</span><b>✳</b>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="story section-wrap" id="story">
+
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1000&q=85"
+             alt="Golden pastries fresh from the oven">
+
+        <span class="image-caption">
+          A GOOD DAY<br>STARTS HERE.
+        </span>
+      </div>
+
+      <div class="story-copy">
+        <p class="eyebrow">A NOTE FROM OUR KITCHEN</p>
+
+        <h2>Not just baked.<br><em>Made with feeling.</em></h2>
+
+        <p>
+          Wildflower Bakery started in a tiny kitchen with one oven
+          and a lot of stubborn optimism. What began as weekend baking
+          for friends turned into a little corner where the smell of
+          fresh bread pulls people in off the street.
+        </p>
+
+        <p>
+          We still do things the slow way. Dough that rests overnight.
+          Butter that's never in a hurry. Every loaf, pastry, and cake
+          is made by hand, in small batches, by people who genuinely
+          love doing this.
+        </p>
+
+        <a class="text-link" href="#visit">
+          Come say hello <span>→</span>
+        </a>
+
+        <span class="story-doodle">✿</span>
+      </div>
+
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="menu-section" id="menu">
+
+      <div class="section-wrap">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FRESH FROM THE OVEN</p>
+            <h2>The good <em>stuff.</em></h2>
+          </div>
+
+          <p class="section-intro">
+            A few favourites, a little something for everyone.
+            Everything is made fresh and disappears quickly — just saying.
+          </p>
         </div>
-        <div class="card">
-            <h3>Cookies</h3>
-            <p>Classic recipes, baked fresh every day.</p>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="menu-controls">
+          <button class="filter-button is-active" data-filter="all" aria-pressed="true">
+            All the good stuff
+          </button>
+
+          <button class="filter-button" data-filter="bakes" aria-pressed="false">
+            Bakes & pastries
+          </button>
+
+          <button class="filter-button" data-filter="sweet" aria-pressed="false">
+            Sweet things
+          </button>
+
+          <button class="filter-button" data-filter="sips" aria-pressed="false">
+            Sips
+          </button>
         </div>
+
+        <div class="product-grid">
+
+          <article class="product-card" data-category="bakes">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                   alt="Golden croissants">
+              <span class="product-tag">A CROWD FAVOURITE</span>
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Butter-kissed croissants</h3>
+                <p>Flaky layers, golden edges, gone too soon.</p>
+              </div>
+              <span class="product-number">01</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="bakes">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1585478259715-876acc5be8eb?auto=format&fit=crop&w=900&q=85"
+                   alt="Artisan sourdough bread">
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Slow-rise sourdough</h3>
+                <p>A proper crust with a soft, tangy middle.</p>
+              </div>
+              <span class="product-number">02</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sweet">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=900&q=85"
+                   alt="Decorated cupcakes">
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Little celebration cakes</h3>
+                <p>For big days, small wins, and just because.</p>
+              </div>
+              <span class="product-number">03</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sweet">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=85"
+                   alt="Chocolate chip cookies">
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Chocolate chunk cookies</h3>
+                <p>Chewy in the middle. No notes.</p>
+              </div>
+              <span class="product-number">04</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sweet">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=900&q=85"
+                   alt="Fresh fruit tart">
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Seasonal little tarts</h3>
+                <p>Buttery shells filled with the good stuff.</p>
+              </div>
+              <span class="product-number">05</span>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sips">
+            <div class="product-image">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85"
+                   alt="Freshly made latte">
+            </div>
+
+            <div class="product-info">
+              <div>
+                <h3>Our house latte</h3>
+                <p>Comfort in a cup. Best enjoyed slowly.</p>
+              </div>
+              <span class="product-number">06</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="menu-footnote">
+          ✳ The menu changes with the seasons. Ask us what's fresh today.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- WHY US SECTION -->
+    <section class="promise section-wrap">
+
+      <div class="promise-heading">
+        <p class="eyebrow">THE WILDFLOWER WAY</p>
+        <h2>Good things take<br><em>a little time.</em></h2>
+      </div>
+
+      <div class="promise-items">
+
+        <article>
+          <span class="promise-icon">✿</span>
+          <h3>Made by hand</h3>
+          <p>
+            Real people, flour-dusted aprons, and a whole lot
+            of care in every batch.
+          </p>
+        </article>
+
+        <article>
+          <span class="promise-icon">☼</span>
+          <h3>Fresh, always</h3>
+          <p>
+            We bake in small batches throughout the day.
+            Freshness is kind of our thing.
+          </p>
+        </article>
+
+        <article>
+          <span class="promise-icon">♡</span>
+          <h3>Good ingredients</h3>
+          <p>
+            Thoughtful ingredients, honest recipes, and
+            absolutely no shortcuts on flavour.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonial-section" id="kind-words">
+
+      <div class="testimonial-inner">
+
+        <p class="eyebrow">DON'T JUST TAKE OUR WORD FOR IT</p>
+
+        <span class="quote-mark">“</span>
+
+        <div class="quote-window" aria-live="polite">
+
+          <blockquote class="quote is-visible">
+            <p>
+              “The croissants are ridiculously good.
+              I came in for one and left with a box. No regrets.”
+            </p>
+            <cite>— JANE D. <span>· REGULAR SINCE 2022</span></cite>
+          </blockquote>
+
+          <blockquote class="quote">
+            <p>
+              “Their sourdough has officially ruined supermarket
+              bread for me. I mean that as a compliment.”
+            </p>
+            <cite>— MARK S. <span>· BREAD ENTHUSIAST</span></cite>
+          </blockquote>
+
+          <blockquote class="quote">
+            <p>
+              “The loveliest little bakery. The coffee is lovely,
+              the people are lovely, everything is lovely.”
+            </p>
+            <cite>— AMINA K. <span>· NEIGHBOURHOOD FRIEND</span></cite>
+          </blockquote>
+
+        </div>
+
+        <div class="quote-controls">
+          <button class="quote-arrow" id="quote-prev" aria-label="Previous testimonial">←</button>
+          <span class="quote-count"><span id="quote-current">01</span> / 03</span>
+          <button class="quote-arrow" id="quote-next" aria-label="Next testimonial">→</button>
+        </div>
+
+      </div>
+
+      <span class="testimonial-flower">✿</span>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="visit section-wrap" id="visit">
+
+      <div class="visit-copy">
+        <p class="eyebrow">THE DOOR IS ALWAYS OPEN</p>
+
+        <h2>Come for the smell.<br><em>Stay for a while.</em></h2>
+
+        <p>
+          Whether it's your morning coffee or a box of treats
+          for someone you love, we'd be happy to see you.
+        </p>
+
+        <a class="button button-dark"
+           href="mailto:info@wildflowerbakery.com?subject=Hello%20Wildflower">
+          Say hello / place an order <span>↗</span>
+        </a>
+      </div>
+
+      <div class="visit-details">
+
+        <div>
+          <span class="detail-label">FIND OUR LITTLE CORNER</span>
+          <p>
+            Your neighbourhood, Lagos<br>
+            <span class="detail-muted">Add your bakery address here</span>
+          </p>
+        </div>
+
+        <div>
+          <span class="detail-label">WHEN THE OVEN'S ON</span>
+          <p>Monday – Saturday<br>8:00am – 6:00pm</p>
+        </div>
+
+        <div>
+          <span class="detail-label">DROP US A NOTE</span>
+          <p>
+            <a href="mailto:info@wildflowerbakery.com">
+              info@wildflowerbakery.com
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <span class="visit-stamp">SEE YOU<br>SOON <b>✿</b></span>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-top">
+
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark">✿</span>
+        <span class="brand-name">wildflower<span>bakery</span></span>
+      </a>
+
+      <p>A little flour, a little flower,<br>and a lot of love.</p>
+
+      <a class="back-top" href="#home">BACK TO THE TOP ↑</a>
+
     </div>
 
-    <h2>Beverages</h2>
-    <div class="card-grid">
-        <div class="card">
-            <h3>Espresso</h3>
-            <p>Bold and rich, just how it should be.</p>
-        </div>
-        <div class="card">
-            <h3>Latte</h3>
-            <p>Smooth espresso with steamed milk.</p>
-        </div>
-        <div class="card">
-            <h3>Cappuccino</h3>
-            <p>Espresso with a thick layer of frothy milk.</p>
-        </div>
-        <div class="card">
-            <h3>Americano</h3>
-            <p>Espresso diluted with hot water.</p>
-        </div>
-        <div class="card">
-            <h3>Hot Chocolate</h3>
-            <p>Rich, creamy hot chocolate made with real cocoa.</p>
-        </div>
-        <div class="card">
-            <h3>Tea</h3>
-            <p>A selection of loose-leaf teas, served hot or iced.</p>
-        </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> WILDFLOWER BAKERY. MADE WITH CARE.</span>
+      <span>FRESHLY BAKED, NEVER BORING.</span>
     </div>
-</section>
 
-        <section class="testimonials">
-            <h2>What Our Customers Say</h2>
-            <blockquote>
-                <p>"The best bakery in town! The croissants are to die for!" - Jane D.</p>
-            </blockquote>
-            <blockquote>
-                <p>"I can't get enough of their sourdough bread. It's simply amazing." - Mark S.</p>
-            </blockquote>
-        </section>
+  </footer>
 
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:info@wildflowerbakery.com">info@wildflowerbakery.com</a></p>
-        </section>
-
-        <footer>
-            <p>&copy; 2026 Wildflower Bakery. All rights reserved.</p>
-        </footer>
-    </body>
+</body>
 </html>
